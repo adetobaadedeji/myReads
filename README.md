@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MyReads Project
 
 This project is a bookshelf (Cataloguing/Tracking) app that allows users to select and categorize books they have read, are currently reading, or want to read.
@@ -35,3 +36,4 @@ The backend API uses a fixed set of cached search results and is limited to a pa
 ## Author
 
 - This project is created by Adetoba Adedeji
+

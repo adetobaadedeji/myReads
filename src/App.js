@@ -1,11 +1,10 @@
-import React from 'react'
-import { Route } from 'react-router-dom'
-import { debounce } from 'throttle-debounce'
-import * as BooksAPI from './BooksAPI'
-
-import './App.css'
-import MainPage from './pages/mainPage'
-import SearchPage from './pages/searchPage'
+import React from 'react';
+import { Route } from 'react-router-dom';
+import { debounce } from 'throttle-debounce';
+import * as BooksAPI from './BooksAPI';
+import './App.css';
+import MainPage from './pages/mainPage';
+import SearchPage from './pages/searchPage';
 
 class App extends React.Component {
   state = {

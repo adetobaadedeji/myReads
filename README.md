@@ -9,8 +9,9 @@ This project is one of the prerequisite projects for the completion of the Udaci
 - install all project dependencies with `yarn add`
 - start the development server with `yarn start`
 
-The application will be running at http://localserver:3000
-The live version is available at "https://adetobaadedeji.github.io/myReads/"
+The application will be running at http://localserver:3000. 
+
+The live version is available at https://adetobaadedeji.github.io/myReads/
 
 ## Description/Features
 

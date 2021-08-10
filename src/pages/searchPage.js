@@ -40,7 +40,7 @@ const SearchPage = (props) => {
                             <BookList 
                                 key={book.id} 
                                 book={book}
-                                onShelfUpdate ={props.onShelfUpdate}
+                                onShelfUpdate={props.onShelfUpdate}
                                 
                             />
                         ))

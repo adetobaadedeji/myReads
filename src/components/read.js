@@ -12,7 +12,7 @@ const Read = (props) => {
                     && <BookList 
                           key={book.id} 
                           book={book}
-                          onShelfUpdate ={props.onShelfUpdate}
+                          onShelfUpdate={props.onShelfUpdate}
                       />
                 ))}
             </ol>

@@ -74,13 +74,13 @@ class App extends React.Component {
           <Route exact path="/" render={() => (
             <MainPage 
               books={this.state.books}
-              onShelfUpdate = {this.updateShelf}
+              onShelfUpdate={this.updateShelf}
             />
           )} 
           />
           <Route path="/searchPage" render={({history}) => (
             <SearchPage 
-              onShelfUpdate = {this.updateShelf}
+              onShelfUpdate={this.updateShelf}
               onSearchBook={this.searchBook}
               searchedBooks={this.state.searchedBooks}
               books={this.state.books}

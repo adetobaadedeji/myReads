@@ -3,14 +3,14 @@ import React from 'react';
 const BookList = (props) => {
     const {book} = props;
 
+    const updateSelection = (book, shelf) => (
+        props.onShelfUpdate(book, shelf)
+    );
+
     const handleSelection = (event) => {
         const {value} = event.target;
         updateSelection(book, value)
     };
-
-    const updateSelection = (book, shelf) => (
-        props.onShelfUpdate(book, shelf)
-    );
 
     return(
         <li>

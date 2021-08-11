@@ -1,24 +1,25 @@
 import React from 'react';
 import BookList from './bookList';
 
-const WantToRead = (props) => {
+const Shelf = (props) => {
+    const {books, title, category, onShelfUpdate} = props;
     return(
         <div className="bookshelf">
-            <h2 className="bookshelf-title">Want to Read</h2>
+            <h2 className="bookshelf-title">{title}</h2>
             <div className="bookshelf-books">
                 <ol className="books-grid">
-                    {props.books.map(book => (
-                        book.shelf === "wantToRead" 
+                    {books.map(book => (
+                        book.shelf === category 
                         && <BookList 
                                 key={book.id} 
                                 book={book}
-                                onShelfUpdate={props.onShelfUpdate}
-                            />
-                    ))}
+                                onShelfUpdate={onShelfUpdate}
+                            /> 
+                     ))}
                 </ol>
             </div>
         </div>
     );
 };
 
-export default WantToRead;
+export default Shelf;

@@ -19,11 +19,21 @@ const SearchPage = (props) => {
         return sbook;
     });
 
+    const filteredBookList = 
+        filteredBooks.length > 0 
+            ? filteredBooks.map(book => 
+                <BookList 
+                    key={book.id} 
+                    book={book}
+                    onShelfUpdate={props.onShelfUpdate}                       
+                />)
+            : <p>No book to display</p> 
+
     return(
         <div className="search-books">
             <div className="search-books-bar">
                 <Link to="/">
-                    <button className="close-search" onClick={onResetSearch}>Close</button>
+                    <span className="close-search" onClick={onResetSearch}>Close</span>
                 </Link>
                 <div className="search-books-input-wrapper">
                     <input 
@@ -34,19 +44,9 @@ const SearchPage = (props) => {
                 </div>
             </div>
             <div className="search-books-results">
-              <ol className="books-grid">
-                  {filteredBooks.length > 0 
-                    ? filteredBooks.map(book => (
-                            <BookList 
-                                key={book.id} 
-                                book={book}
-                                onShelfUpdate={props.onShelfUpdate}
-                                
-                            />
-                        ))
-                    : <p>No book to display</p>  
-                }
-              </ol>
+                <ol className="books-grid">
+                  {filteredBookList}
+                </ol>
             </div>
         </div>
     );

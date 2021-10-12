@@ -6,7 +6,7 @@ This project is one of the prerequisite projects for the completion of the Udaci
 
 ## To get started
 
-- install all project dependencies with `yarn add`
+- install all project dependencies with `yarn install`
 - start the development server with `yarn start`
 
 The application will be running at http://localserver:3000. 
